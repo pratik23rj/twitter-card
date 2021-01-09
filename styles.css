@@ -1,90 +1,89 @@
-body{
-     font-family: 'Segoe UI', sans-serif;
-     margin: 0;
-     
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1{
-    text-align: center;
+.heading {
+    text-align: left;
+    margin: 2rem 1rem ;
+}
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
     
 }
 
-.twitter-card{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    padding: 5px 0;
-    min-width: 32rem;
-    align-items: center;
-    margin: 3rem auto;
-    
+.card-img {
+    width: 90%;
+    margin: 1rem ;
 }
 
-.card-header{
-    display: flex;
-    flex-wrap: nowrap;
+.card-img img {
+    max-height: 400px;
 }
 
-.profile-pic img{
-    border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
-    margin: 0 0 0 1rem;
+
+.card-data {
+    width: 90%;
+    margin: 1rem;
+    padding: 2.5rem 1rem;
 }
 
-.username-data{
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 0 1rem;
-}
-
-.username {
-    
-    display: inline-flex;
-}
-
-.username span{
-    color: #222b2f;
+.card-data-head {
+    font-size: 45px;
     font-weight: 700;
+    text-align: left;
 }
 
-.username p{
-    margin: 0 ;
-    padding-left: 0.25rem;
-    color: #768797;
+.card-data-para {
+    font-size: 22px;
+    font-weight: 400;
+    text-align: left;
 }
 
-.caption{
-    color: #192934;
-}
-
-.card-post img{
-    border-radius: 1rem;
-    margin: 0.35rem 0 0 3rem;
-    max-width: 22rem;
-    max-height: 22rem;
+button{
+    background-color: #2563EB;
+    border: none;
+    color: white;
+    padding: 1rem 1.2rem;
+    border-radius: 0.6rem;
+    font-size: 18px;
     
 }
 
-.card-footer{
+
+@media (max-width: 768px){
+    .card{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-img {
+        margin: 0;
+    }
+    .card-data {
+        margin: 0;
+        padding: 0;
+    }
+    .card-data-head {
+        font-size: 40px;
+    }
     
-    color: #52525B;
-    flex-wrap: nowrap;
-    margin: 0.5rem 0;
-
-    display: flex;
-    align-items: center;
+    .card-data-para {
+        font-size: 20px;
+    }
 }
+    
 
-.card-footer-data{
-    display: inline-flex;
-    padding: 0 0.5rem ;
-    margin: 0 0 0 1rem;
+/* Bottom Section - Ignore it */
+.credit {
+    text-align: center;
+    background-color: #F5F5F5;
+    padding: 1rem 1.5rem;
+    margin: 5rem auto 0rem auto;
+    max-width: 500px;
 }
-
-.card-footer span{
-    padding: 0 10px;
-
-}
-
-
